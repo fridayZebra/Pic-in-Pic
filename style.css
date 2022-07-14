@@ -1,10 +1,50 @@
-* {
-    margin: 0;
-    padding: 0;
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+html {
+  box-sizing: border-box;
+  
+}
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #343434;
 }
 
+.button-container {
+  border: 2px solid black;
+  padding: 10px;
+  border-radius: 10px;;
+  box-shadow: inset 0 20px 4px -19px rgba(255, 255, 255, 0.7);
+}
 
-mobile first style
+button {
+  cursor: pointer;
+  outline: none;
+  width: 120px;
+  height: 75px;
+  font-family: 'Courgette', cursive;
+  font-size: 25px;
+  color: white;
+  text-shadow: 0 2px 5px black;
+  background: linear-gradient(to top, #696969, #575757);
+  border: 2px solid black;
+  border-radius: 7px;
+  box-shadow: inset 0 20px 4px -19px rgba(255, 255, 255, 0.4), 0 12px 12px 0 rgba(0,0,0, 0.3); /*   can cut numbersin half to give visual of being pressed in */
+
+}
+
+button:hover {
+  background: linear-gradient(to bottom, #696969, #575757);
+}
+
+button:active {
+  transform: translateY(3px); /*when button is clicked going down effect */
+  box-shadow: 0 6px 6px 0 rgba(0,0,0, 0.3);
+}
+
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {...}
